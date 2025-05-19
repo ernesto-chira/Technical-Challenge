@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exchange Rate App</string>
+    <string name="str_start_your_operation">Empieza tu operación</string>
+    <string name="str_see_history">Ver historial</string>
+    <string name="str_bid_exchange">Precio compra%1$s </string>
+    <string name="str_bid_and_ask">Compra %1$s | Venta %2$s</string>
+    <string name="str_you_send">Tú envías%1$s</string>
+    <string name="str_you_receive">Tú recibes%1$s</string>
+    <string name="str_important">Importante</string>
+    <string name="str_add">Agregar</string>
+    <string name="str_the_plan_only_allows_euros_message">En el plan actual solo está permitido el Euro (EUR) como moneda base.</string>
+    <string name="str_confirm_clear_history">¿Estás seguro de querer limpiar el historial?</string>
+    <string name="str_operation_date">Fecha operación: </string>
+    <string name="str_accept">Aceptar</string>
+    <string name="str_cancel">Cancelar</string>
+</resources>
