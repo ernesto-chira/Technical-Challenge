@@ -13,6 +13,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
+        buildConfigField("String", "API_BASE_URL", "\"https://api.exchangeratesapi.io/v1/\"")
+        buildConfigField("String", "API_KEY", "\"c8b8412982a1b28ded4d3e864eadbfa5\"")
     }
 
     buildTypes {
@@ -30,6 +33,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        buildConfig = true
     }
 }
 

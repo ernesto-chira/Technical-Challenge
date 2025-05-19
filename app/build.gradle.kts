@@ -56,22 +56,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    // Compose
-    /*implementation("androidx.compose.ui:ui:1.5.0")
-    implementation("androidx.compose.material3:material3:1.1.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.5.0")
-    implementation("androidx.compose.runtime:runtime-livedata:1.5.0")
-    implementation("androidx.compose.material:material-icons-core:1.5.0")
-    implementation("androidx.compose.material:material-icons-extended:1.5.0")*/
-
     implementation("io.insert-koin:koin-androidx-compose:3.4.0")
 
     // Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.7.0")
 
     // Koin
-    //implementation("io.insert-koin:koin-android:3.4.0")
-    //implementation("io.insert-koin:koin-core:3.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // Coil

@@ -1,5 +1,6 @@
 package com.challenge.exchangerateapp.core.data.repository
 
+import com.challenge.exchangerateapp.core.BuildConfig
 import com.challenge.exchangerateapp.core.data.local.database.dao.ExchangeRateDao
 import com.challenge.exchangerateapp.core.data.mapper.toExchangeRateDto
 import com.challenge.exchangerateapp.core.data.mapper.toExchangeRateEntity
@@ -14,14 +15,17 @@ class ExchangeRateRepositoryImpl(
     private val dao: ExchangeRateDao
 ) : ExchangeRateRepository {
 
+    private val apiKey = BuildConfig.API_KEY
     private val executor = Executors.newSingleThreadExecutor()
 
     override suspend fun getExchangeRate(base: String, symbol: String?): ExchangeRate {
-        val response = exchangeRateService.getExchangeRate(/*base, "c8b8412982a1b28ded4d3e864eadbfa5"*/)
+        val response = exchangeRateService.getExchangeRate(base, apiKey)
         if (response.error == null) {
             return ExchangeRate(base, symbol.orEmpty(), response.rates)
         } else {
-            error("Exchange rate not found for $symbol")
+            // error("Exchange rate not found for $symbol")
+            println("error")
+            return ExchangeRate("", "", mapOf())
         }
     }
 
